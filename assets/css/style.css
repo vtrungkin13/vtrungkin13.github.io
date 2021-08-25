@@ -1,0 +1,169 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+#header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height:  50px;
+    background-color: black;
+}
+
+#name {
+    position: absolute;
+    display: inline-block;
+    line-height: 50px;
+    margin-left: 20px;
+}
+
+#name a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+}
+
+#name a:hover {
+    cursor: pointer;
+}
+
+#nav {
+    position: absolute;
+    display: inline-block;
+    right: 54px;
+}
+
+#nav > li {
+    display: inline-block; 
+}
+
+#nav li {
+    position: relative;
+}
+
+#nav > li > a {
+    color: white;
+}
+
+#nav li a {
+    line-height: 50px;
+    text-decoration: none;
+    padding: 0 20px;
+}
+
+#button {
+    position: absolute;
+    display: inline-block;
+    line-height: 50px;
+    top: 0;
+    right: 0;
+    padding: 0px 20px;
+    color: white;
+}
+
+#button:hover,
+#nav li:hover > a {
+    cursor: pointer;
+    background-color: #ccc;
+    display: block;
+    color: black;
+}
+
+#nav li:hover .subnav {
+    display: block;
+}
+
+#nav .subnav a {
+    color: black;
+}
+
+#nav .subnav {
+    width: 160px;
+    display: none;
+    position: absolute;
+    list-style: none;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    top: 50px;
+    left: -50px;
+    min-width: 250px;
+
+}
+
+#nav .subnav.last {
+    left: -130px;
+}
+
+#nav .arrow-down {
+    font-size: 12px;
+}
+
+#breadcrumb {
+    position: relative;
+    top: 50px;
+}
+
+#title {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    line-height: 277px;
+    color: white;
+    font-size: 80px;
+    font-weight: 700;
+}
+
+#content {
+    position: relative;;
+    margin: 0 100px;
+    margin-top: 100px;
+
+
+}
+
+#content #overall {
+    position: absolute;
+    font-size: 16px;
+    color:#000;
+}
+
+#content #cover {
+    position: absolute;
+    margin-top: 100px;
+}
+
+#cover .category {
+    position: relative;
+    margin-top: 100px;
+    font-size: 30px;
+    color: rgba(34,110,147,1);
+    font-weight: bold;
+}
+
+#cover .category:first-child {
+    margin-top: 0;
+}
+
+#cover .category .maincontent {
+    color: black;
+    font-weight: normal;
+    margin-left: 20px;
+    font-size: 16px;
+    padding: 5px 0;
+}
+
+.category .subcontent {
+    list-style: none;
+    margin-left: 10px;
+}
+
+.category .video {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 50px 0;
+}
